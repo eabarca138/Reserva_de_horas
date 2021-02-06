@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reserva de Horas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head> 
+  <body>
+    <h1>Reserva de Horas</h1>
+    <form class="form-register" onsubmit="return validar();">
+      <div class="contenedor-inputs">
+        <input type="text"id="rut" name="rut" placeholder="RUT" class="inputcss"/>
+        <input type="text" id="nombres" name="nombres" placeholder="Nombres" class="inputcss"/>
+        <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" class="inputcss"/>
+        <input type="text" id="edad" name="edad" placeholder="Edad" class="inputcss"/>
+        <input type="text" id="email" name="email" placeholder="Email" class="inputcss"/>
+        <select name="especialidad" id="especialidad" class="inputcss">
+          <optgroup label="Especialidad">
+            <option>Radiología</option>
+            <option>Traumatología</option>
+            <option>Dental</option>
+          </optgroup>
+        </select>
+        <input type="text" id="fecha" name="fecha" placeholder="dd/mm/yyyy" class="inputcss"/>
+        <input type="time" id="hora" name="hora" placeholder="Hora" class="inputcss"/>
+        <input type="submit" id="reservar" value="Reservar" class="btn-enviar"/>
+      </div>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
